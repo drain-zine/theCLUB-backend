@@ -15,8 +15,6 @@ export const getAllPlaylists = async(req: Request, res: Response, next: NextFunc
                 playlistTracks
             }
         });
-
-        console.log('request sent');
     }catch(e){
         console.error(e);
         res.status(500).json({
@@ -29,7 +27,7 @@ export const getAllPlaylists = async(req: Request, res: Response, next: NextFunc
 
 export const createPlaylist = async(req: Request, res: Response, next: NextFunction ) => {
     const data = req.body;
-    
+
     try{
         const playlist = await prisma.playlist.create({
             data: {
@@ -55,9 +53,6 @@ export const createPlaylist = async(req: Request, res: Response, next: NextFunct
 
 export const addTrackToPlaylist = async(req: Request, res: Response, next: NextFunction) => {
     const data = req.body;
-
-    console.log(data);
-
     try{
         if(prisma.playlistTracks.playlistId !== data.playlistId && prisma.playlistTracks.trackId !== data.trackId ){
             await prisma.playlistTracks.create({

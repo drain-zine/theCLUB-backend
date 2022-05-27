@@ -23,6 +23,26 @@ async function main() {
                             {
                                 name: 'Aesthetic Dialectic',
                                 filename: 'ad.mp3'
+                            },
+                            {
+                                name: 'In G and E',
+                                filename: 'g.mp3'
+                            },
+                            {
+                                name: 'Weekend at the Fire Academy',
+                                filename: 'w.mp3'
+                            },
+                            {
+                                name: 'The Action Index',
+                                filename: 'ai.mp3'
+                            },
+                            {
+                                name: 'Boy With No Arms',
+                                filename: 'b.mp3'
+                            },
+                            {
+                                name: 'Epilogue to a Carcrash',
+                                filename: 'e.mp3'
                             }
                         ]
                     }
