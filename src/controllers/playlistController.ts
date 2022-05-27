@@ -1,8 +1,7 @@
-import { Request, Response, NextFunction, response } from 'express';
+import { Request, Response, NextFunction } from 'express';
 
 const { PrismaClient } = require('@prisma/client');
 const prisma = new PrismaClient();
-
 
 export const getAllPlaylists = async(req: Request, res: Response, next: NextFunction ) => {
     try{
@@ -132,3 +131,5 @@ export const deletePlaylist = async(req: Request, res: Response, next: NextFunct
 
     next();
 };
+
+export { prisma };

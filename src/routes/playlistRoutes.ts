@@ -4,9 +4,6 @@ import { addTrackToPlaylist, createPlaylist, removeTrackFromPlaylist, getAllPlay
 
 const playlist = express.Router();
 
-// playlist.get('/', async(res: Response, req: Request) => {
-
-// });
 playlist.get('/', asyncHandler(getAllPlaylists));
 playlist.post('/create', asyncHandler(createPlaylist));
 playlist.post('/add-track', asyncHandler(addTrackToPlaylist));
