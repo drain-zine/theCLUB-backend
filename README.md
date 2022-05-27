@@ -24,7 +24,7 @@ npm run test - run the server tests
 Here is a list of todos across the whole project that I would address if I had more time. I worked on this Thursday evening + night, and a bit on Friday morning - ironically I was at a gig Wednesday.
 
 1. Higher test coverage - I have only included a few sample tests so far, and I would opt to increase the test coverage first thing. In the front end I would
-also test UI elements with react-testing-library. I failed to get prisma mocking working as well.
+also test UI elements with react-testing-library. I failed to get prisma mocking working as well (you can peep in the commit history).
 2. Error handling - I would expand the endpoints to send more verbose errors (whether database or server related), and ingest those errors in redux appropriately.
 3. Refactoring back end to dependency inject prisma
 4. Adding album covers
