@@ -14,6 +14,11 @@ This is subproject is the backend for theCLUB's technical test. It is built with
 npm run dev - runs the dev server
 npm run test - run the server tests
 ```
+## Basic architecture
+1. Data is stored in the postgres database.
+2. On initial page load this is fetched by the frontend and cached in redux.
+3. All requests to create a playist, add a track etc are sent to the backend which use the prisma ORM to operate on the database.
+4. A response is sent to the frontend which updates its cache accordingly.
 
 ## TODOS
 Here is a list of todos across the whole project that I would address if I had more time. I worked on this Thursday evening + night, and a bit on Friday morning - ironically I was at a gig Wednesday.
